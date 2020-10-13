@@ -12,3 +12,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
   linkInput.value = `${window.location}#${encrypted}`
   linkInput.select()
 })
+
+/* Decode message */
+const { hash } = window.location
+console.log(atob(hash.replace('#', '')))
