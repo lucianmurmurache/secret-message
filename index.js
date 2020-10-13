@@ -15,4 +15,12 @@ document.querySelector('form').addEventListener('submit', (event) => {
 
 /* Decode message */
 const { hash } = window.location
-console.log(atob(hash.replace('#', '')))
+
+/* Display message */
+const message = atob(hash.replace('#', ''))
+
+if (message) {
+  document.querySelector('#message-panel').classList.add('hide')
+  document.querySelector('#message-show').classList.remove('hide')
+  document.querySelector('h2').innerHTML = message
+}
