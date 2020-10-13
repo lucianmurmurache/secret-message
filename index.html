@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Secret message</title>
 
     <style>
@@ -36,15 +37,15 @@
                 </div>
             </div>
             <div id="message-panel" class="card-panel">
-                <form action="">
-                    <label for="">Enter a secret message..</label>
-                    <input type="text" id="message-input" autocomplete="off">
-                    <button class="btn">Create</button>
+                <form>
+                    <label>Enter a secret message..</label>
+                    <input type="text" id="message-input" autocomplete="off" required>
+                    <button class="btn waves-effect waves-light">Create</button>
                 </form>
             </div>
             <div id="link-panel" class="card-panel hide">
                 <div>
-                    Share this link
+                    Share this link (press ctrl c)
                     <input type="text" id="link-input">
                 </div>
             </div>
