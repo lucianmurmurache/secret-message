@@ -1,0 +1,91 @@
+/* Color themes */
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #f0f0f0;
+    --text: #171717;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #171717;
+    --text: #f0f0f0;
+  }
+}
+
+/* Font size scaling */
+
+@media (min-width: 320px) {
+  :root {
+    --scale: 0.9;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --scale: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --scale: 1.2;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Background */
+html,
+.card-panel {
+  color: var(--text);
+  background-color: var(--background);
+}
+
+/* Input & label */
+input[type='text'] {
+  color: var(--text);
+}
+
+label {
+  font-size: calc(16px * var(--scale));
+}
+
+main {
+  margin-top: 25vh;
+  height: 70vh;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: calc(26px * var(--scale));
+}
+
+button {
+  color: #000;
+}
+
+/* Footer */
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 5vh;
+  display: grid;
+  place-items: center;
+  font-size: calc(14px * var(--scale));
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text);
+  transition: all 800ms ease;
+}
+
+footer a:hover {
+  color: #26a69a;
+}

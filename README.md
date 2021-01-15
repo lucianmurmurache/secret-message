@@ -6,9 +6,11 @@
 
 ### A demo app is available [here](https://secret-message-green.vercel.app/)
 
+- The color theme will adjust based on your browser theme
+
 ### Installation instructions:
 
-- There is no need to install anything, the app is quite simple and uses materializecss CDN so no dependencies required.
+- There is no need to install anything, the app is quite simple and uses materializecss CDN so there are no dependencies required
 
 ### Hosting the app on Vercel:
 
