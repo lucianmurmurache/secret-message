@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Encode messages and send a link to your intended receiver, once they access the link, the message will decode and they, in turn can do the same">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
@@ -11,32 +13,38 @@
 </head>
 
 <body>
-
-    <div class="row">
-        <div class="col s8 offset-s2">
-            <div id="message-show" class="card-panel hide">
-                <h2></h2>
-                <div>
-                    <a href="./index.html">
-                        Create your own secret message
-                    </a>
+    <main>
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <div id="message-show" class="card-panel hide">
+                    <h2></h2>
+                    <div>
+                        <a href="./index.html">
+                            Create your own secret message
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div id="message-panel" class="card-panel">
-                <form>
-                    <label>Enter a secret message..</label>
-                    <input type="text" id="message-input" autocomplete="off" required>
-                    <button class="btn waves-effect waves-light">Create</button>
-                </form>
-            </div>
-            <div id="link-panel" class="card-panel hide">
-                <div>
-                    Copy and share this link
-                    <input type="text" id="link-input">
+                <div id="message-panel" class="card-panel">
+                    <form>
+                        <label for="message-input">Enter a secret message..</label>
+                        <input type="text" id="message-input" autocomplete="off" required>
+                        <button class="btn waves-effect waves-light black-text bold">Create</button>
+                    </form>
+                </div>
+                <div id="link-panel" class="card-panel hide">
+                    <div>
+                        Copy and share this link
+                        <input type="text" id="link-input">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <a href="https://github.com/lucianmurmurache/secret-message" target="_blank" rel="noopener noreferrer"
+            aria-label="Github repository">Github
+            repository</a>
+    </footer>
 
     <script src="js/index.js"></script>
 </body>
